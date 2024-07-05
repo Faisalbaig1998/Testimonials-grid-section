@@ -1,4 +1,39 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --moderateviolet: hsl(263, 55%, 52%);
+  --verydarkgrayishblue: hsl(217, 19%, 35%);
+  --verydarkblackishblue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(0, 0%, 81%);
+  --lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+html,
+body {
+  background-color: var(--lightgrayishblue);
+  border: 2px solid black;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border: 2px solid red;
+}
+
+.card {
+  width: auto;
 }
