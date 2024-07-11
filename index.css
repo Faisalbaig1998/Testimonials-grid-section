@@ -36,16 +36,17 @@ body {
   margin: auto;
   width: 80%;
   height: 80%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .card {
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   /* height: 200px; */
   width: auto;
   /* border: 2px solid green; */
   font-family: "Barlow Semi Condensed";
+  display: grid;
 }
 
 .Daniel {
@@ -79,7 +80,8 @@ body {
 
 .avatar-img {
   border: 2px solid red;
-  width: 40px; /* Increase the width */
+  width: 30px; /* Increase the width */
+  height: 30px;
   border-radius: 50%;
   object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
 }
@@ -92,7 +94,9 @@ body {
 }
 
 .avatar-div {
+  font-size: 13px;
   display: flex;
+  align-items: center;
   /* border: 1px solid black; */
   position: relative; /* Ensure the parent is positioned relatively */
 }
@@ -112,6 +116,20 @@ body {
   z-index: 1;
 }
 
-.title{
+.title {
   z-index: 3;
+}
+
+.description {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tag {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.name {
+  font-weight: 600;
 }
