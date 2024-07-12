@@ -11,12 +11,14 @@
   --white: hsl(0, 0%, 100%);
   --lightgray: hsl(0, 0%, 81%);
   --lightgrayishblue: hsl(210, 46%, 95%);
+  --verified-graduate: 0.5;
+  --review-paragraph: 0.7;
 }
 
 html,
 body {
   background-color: var(--lightgrayishblue);
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 100%;
 }
 
@@ -32,18 +34,15 @@ body {
   column-gap: 20px;
   row-gap: 15px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 220px);
+  grid-template-rows: repeat(2, 240px);
   margin: auto;
-  width: 80%;
-  height: 80%;
+  width: 85%;
   /* border: 2px solid red; */
 }
 
 .card {
   padding: 20px;
   border-radius: 10px;
-  /* height: 200px; */
-  width: auto;
   /* border: 2px solid green; */
   font-family: "Barlow Semi Condensed";
   display: grid;
