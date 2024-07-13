@@ -34,9 +34,9 @@ body {
   column-gap: 20px;
   row-gap: 15px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 240px);
+  grid-template-rows: repeat(2, 260px);
   margin: auto;
-  width: 85%;
+  width: 80%;
   /* border: 2px solid red; */
 }
 
@@ -49,6 +49,7 @@ body {
 }
 
 .Daniel {
+  color: white;
   position: relative;
   background-color: var(--moderateviolet);
   grid-column: 1/3;
@@ -57,6 +58,7 @@ body {
 .Jonathan {
   background-color: var(--verydarkgrayishblue);
   grid-column: 3/4;
+  color: white;
 }
 
 .Jeanette {
@@ -69,6 +71,7 @@ body {
   grid-column: 2/4;
   grid-row: 2/3;
   background-color: var(--verydarkblackishblue);
+  color: white;
 }
 
 .Kira {
@@ -78,7 +81,6 @@ body {
 }
 
 .avatar-img {
-  border: 2px solid red;
   width: 30px; /* Increase the width */
   height: 30px;
   border-radius: 50%;
@@ -93,10 +95,11 @@ body {
 }
 
 .avatar-div {
+  height: 50px;
   font-size: 13px;
   display: flex;
   align-items: center;
-  /* border: 1px solid black; */
+  /* border: 2px solid black; */
   position: relative; /* Ensure the parent is positioned relatively */
 }
 
@@ -106,8 +109,8 @@ body {
   top: 0px; /* Adjust as needed */
   /* left: 20px;  */
   right: 50px;
-  width: 80px; /* Adjust as needed */
-  height: 80px;
+  width: 100px; /* Adjust as needed */
+  height: 100px;
   background-image: url("testimonials-grid-section-main/images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -116,19 +119,30 @@ body {
 }
 
 .title {
+  font-weight: 550;
+  height: 80px;
   z-index: 3;
+  /* border: 2px solid red; */
 }
 
 .description {
   font-size: 13px;
   font-weight: 500;
+  opacity: 0.7;
+  /* border: 2px solid green; */
 }
 
 .tag {
   font-size: 13px;
   font-weight: 500;
+  opacity: 0.5;
 }
 
 .name {
   font-weight: 600;
+  opacity: 0.7;
+}
+
+.purple-border {
+  border: 2px solid hsl(263, 55%, 52%, 50%);
 }
