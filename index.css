@@ -143,6 +143,36 @@ body {
   opacity: 0.7;
 }
 
-.purple-border {
-  border: 2px solid hsl(263, 55%, 52%, 50%);
+.avatar-img {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.Patrick .avatar-div .avatar-img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      height: auto;
+    }
+
+    .title {
+      height: auto;
+    }
+    .description {
+      margin-top: 10px;
+      height: auto;
+    }
+    .Daniel::after {
+      width: 80px;
+      height: 80px;
+      right: 20px;
+    }
+  }
 }
