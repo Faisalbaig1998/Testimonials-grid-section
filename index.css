@@ -18,7 +18,6 @@
 html,
 body {
   background-color: var(--lightgrayishblue);
-  /* border: 2px solid black; */
   height: 100%;
 }
 
@@ -37,59 +36,56 @@ body {
   grid-template-rows: repeat(2, 260px);
   margin: auto;
   width: 80%;
-  /* border: 2px solid red; */
 }
 
 .card {
   padding: 20px;
   border-radius: 10px;
-  /* border: 2px solid green; */
   font-family: "Barlow Semi Condensed";
   display: grid;
 }
 
 .Daniel {
-  color: white;
+  color: var(--white);
   position: relative;
   background-color: var(--moderateviolet);
-  grid-column: 1/3;
+  grid-column: 1 / 3;
 }
 
 .Jonathan {
   background-color: var(--verydarkgrayishblue);
-  grid-column: 3/4;
-  color: white;
+  grid-column: 3 / 4;
+  color: var(--white);
 }
 
 .Jeanette {
-  grid-column: 1/2;
-  grid-row: 2/3;
   background-color: var(--white);
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .Patrick {
-  grid-column: 2/4;
-  grid-row: 2/3;
   background-color: var(--verydarkblackishblue);
-  color: white;
+  color: var(--white);
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
 }
 
 .Kira {
-  grid-column: 4/5;
-  grid-row: 1/3;
   background-color: var(--white);
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
 }
 
 .avatar-img {
-  width: 30px; /* Increase the width */
+  width: 30px;
   height: 30px;
   border-radius: 50%;
-  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  object-fit: cover;
 }
 
 .avatar-name {
   margin-left: 10px;
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
 }
@@ -99,17 +95,15 @@ body {
   font-size: 13px;
   display: flex;
   align-items: center;
-  /* border: 2px solid black; */
-  position: relative; /* Ensure the parent is positioned relatively */
+  position: relative;
 }
 
 .Daniel::after {
   content: "";
   position: absolute;
-  top: 0px; /* Adjust as needed */
-  /* left: 20px;  */
+  top: 0;
   right: 50px;
-  width: 100px; /* Adjust as needed */
+  width: 100px;
   height: 100px;
   background-image: url("testimonials-grid-section-main/images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
@@ -122,17 +116,16 @@ body {
   font-weight: 550;
   height: 80px;
   z-index: 3;
-  /* border: 2px solid red; */
 }
 
 .description {
   font-size: 13px;
   font-weight: 500;
   opacity: 0.7;
-  /* border: 2px solid green; */
 }
 
-.tag {
+.tag,
+.name {
   font-size: 13px;
   font-weight: 500;
   opacity: 0.5;
@@ -148,31 +141,28 @@ body {
 }
 
 .Patrick .avatar-div .avatar-img {
-  border: 2px solid hsl(263, 55%, 52%);
+  border: 2px solid var(--moderateviolet);
 }
 
 @media screen and (max-width: 376px) {
-  body {
-    .main {
-      display: flex;
-      flex-direction: column;
-    }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .card {
-      height: auto;
-    }
+  .card,
+  .title,
+  .description {
+    height: auto;
+  }
 
-    .title {
-      height: auto;
-    }
-    .description {
-      margin-top: 10px;
-      height: auto;
-    }
-    .Daniel::after {
-      width: 80px;
-      height: 80px;
-      right: 20px;
-    }
+  .description {
+    margin-top: 10px;
+  }
+
+  .Daniel::after {
+    width: 80px;
+    height: 80px;
+    right: 20px;
   }
 }
